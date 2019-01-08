@@ -33,8 +33,10 @@ extern crate arrayvec;
 
 #[cfg(feature = "std")]
 pub mod alloc {
-	pub use std::boxed;
-	pub use std::vec;
+	pub use ::std::boxed;
+	pub use ::std::vec;
+	pub use ::std::string;
+	pub use ::std::borrow;
 }
 
 mod codec;
